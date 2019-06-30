@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="../static/js/showpreview.js"></script>
+	<script type="text/javascript" src="../static/js/verifyfile.js"></script>
+	<style>
+		body {
+			background-image: url('../static/Images/win2.jpg')
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container" style="background-color: #C3CDDE;background-image:url('../static/Images/win2.jpg'); ">
+		<br><br>
+		<h1 style="text-align:center;color:white;"> Image Text Recognition </h1><br>
+		<div class="row">
+			<!-- LEFT DIV -->
+			<div class="col-sm-6" style="background-image: url('../static/Images/brain.jpg'); height:427px;">
+			</div>
+			<!-- RIGHHT DIV -->
+			<div class="col-sm-6"
+				style="background-color:grey;height: 427px;background-image:url('../static/Images/back.jpg') ;">
+				<br><br><br>
+				<form action="/upload" method="post" enctype="multipart/form-data">
+					<span class="btn btn-default btn-file">
+						<input id="file" type="file" placeholder="file" name="inputFile" onchange="previewImg()">
+					</span>
+					<input type="submit" value="Upload your image" class="btn btn-primary">
+					<div>
+						<img src="" height="300px" width="400px" alt="Waiting for Image Preview..." />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

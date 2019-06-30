@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="../static/js/showpreview.js"></script>
+  <script type="text/javascript" src="../static/js/verifyfile.js"></script>
+  <style>
+    body {
+      background-image: url('../static/Images/win2.jpg')
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" style="background-color: #C3CDDE;background-image:url('../static/Images/win2.jpg'); ">
+    <br><br>
+    <h1 style="text-align:center;color:white;">Image Text Recognition</h1><br>
+    <div class="row">
+      <!-- LEFT DIV -->
+      <div class="col-sm-6" style="background-image: url('../static/Images/brain.jpg'); height: 70.85%;">
+      </div>
+      <!-- RIGHHT DIV -->
+      <div class="col-sm-6"
+        style="background-color:grey;height: 427px;background-image:url('../static/Images/back.jpg') ; ">
+        <br><br><br>
+        <div>
+          <strong>
+            <h3 style="text-align:center;">Text Extraction Completed!</h3>
+          </strong>
+          <input type="button" onclick="window.location.href='/'" value="Check New" id="upload-button">
+        </div>
+        <div>
+          <p>{{ output }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
